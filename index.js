@@ -3,8 +3,8 @@ const app = express()
 const port = 80
 
 // Static Files
-app.use(express.static('./src/public'))
-app.use("/css", express.static(__dirname + './src/public/css'))
+app.use(express.static('./src/public')) //for loading css
+app.use("/css", express.static(__dirname + './src/public/css')) //making acessing the assets easy
 app.use("/img", express.static(__dirname + './src/public/img'))
 app.use("/js", express.static(__dirname + './src/public/js'))
 
